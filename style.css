@@ -253,6 +253,7 @@ border-radius: 20px;
     position: relative;
     top:50px;
     font-size: 60px;
+    text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(1, 0, 12), 0 0 5px rgb(15, 173, 247);
     
 }
 .Pdep .contenu1{
@@ -260,14 +261,13 @@ border-radius: 20px;
     position: relative;
     text-align:center;
     background-color: rgba(230, 239, 240, 0.973);
-    top:200px;
+    top:100px;
     left: 10%;
     width:80%;
     height: 500px;
     box-shadow: 0 6px  10px rgba(5, 61, 75, 0.7);
     border-radius: 12px;  
     border: 4px ridge rgba(17, 16, 29, 1);
-    background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     transition:all 1s ease;  
     overflow: scroll;
@@ -300,6 +300,9 @@ border-radius: 20px;
     padding: 8px;
     width: 1%;
   }
+  #time{
+      font-size: 20px;
+  }
 
   
 .Pdep .contenu2{
@@ -307,7 +310,7 @@ border-radius: 20px;
     position: relative;
     text-align:center;
     background-color: rgba(230, 239, 240, 0.973);
-    top:200px;
+    top:100px;
     left: 10%;
     width:80%;
     height: 500px;
@@ -328,16 +331,29 @@ border-radius: 20px;
 .Pdep .contenu2 .content_mail{
     position: relative;
     background-color: rgba(230, 239, 240, 0.973);
-    top:10%;
+    top:1%;
     width:80%;
     height:50%;
     border-radius: 12px;  
     border: 4px ridge rgba(17, 16, 29, 1);
     font-size: 30px;
 } 
+
 .Pdep .contenu2 .send_mail{
     position: absolute;
     border-radius: 12px;  
+    top:85%;
+    left:10%;
+    width:80%;
+    height: 10%;
+    font-size: 30px;
+    transition:all 1s ease;
+    
+}
+.Pdep .contenu2 .send_mail:hover{
+    position: absolute;
+    border-radius: 12px;
+    background-color: #77d37c;  
     top:85%;
     left:10%;
     width:80%;
@@ -351,17 +367,40 @@ border-radius: 20px;
     position: relative;
     text-align:center;
     background-color: rgb(230, 239, 240);
-    top:200px;
+    top:100px;
     left: 10%;
     width:80%;
     height: 500px;
     box-shadow: 0 6px  10px rgba(5, 61, 75, 0.7);
     border-radius: 12px;  
     border: 4px ridge rgba(17, 16, 29, 1);
-    background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     transition:all 1s ease;
 } 
+.Pdep .add_rem_contact{
+    display:none;
+    position: absolute;
+    bottom:10%;
+    width:80%;
+    left: 10%;
+    height: 100px;
+
+}
+#NC_add{
+position:absolute;
+left: 20%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(30, 243, 40), 0 0 5px rgb(15, 173, 247);
+    
+}
+#C_rem{
+position:absolute;
+right: 20%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(207, 38, 16), 0 0 5px rgb(15, 173, 247);
+    
+
+}
 #T_Contact{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: separate;
@@ -371,7 +410,7 @@ border-radius: 20px;
 #T_Contact td, #T_Contact th {
     position: relative;
     text-align:center;
-    color:rgba(7, 6, 6, 0);
-    border: 1px solid rgb(10, 9, 9);
+    color:rgb(12, 3, 3);
     padding: 8px;
+    width: 1%;
   }
