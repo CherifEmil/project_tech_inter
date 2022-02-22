@@ -23,7 +23,7 @@ function Insert_Data(tab_id,arr_data)
   }
   old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
 }
-var a = [{from:"s",subject:"2",time:"4"},{from:"s",subject:"2",time:"4"},{from:"s",subject:"2",time:"4"}]
+var a = [{from:"s",subject:"2",message:"",time:"4"},{from:"s",subject:"2",message:"",time:"4"},{from:"s",subject:"2",message:"",time:"4"}]
 
 
 

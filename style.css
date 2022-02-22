@@ -262,7 +262,7 @@ border-radius: 20px;
     background-color: rgba(230, 239, 240, 0.973);
     top:200px;
     left: 10%;
-    width:100;
+    width:80%;
     height: 500px;
     box-shadow: 0 6px  10px rgba(5, 61, 75, 0.7);
     border-radius: 12px;  
@@ -280,17 +280,27 @@ border-radius: 20px;
     width: 100%;
     
 }
-#T_From_M tr {
-    width: 100%;
+#T_From_M tbody tr:hover {
+    background-color:rgb(65, 168, 236);
+    border-radius: 50%;
+    transition:all 2s ease;
+    
 }
 #T_From_M td, #T_From_M th {
     position: relative;
     text-align:center;
     color:rgb(12, 3, 3);
-    border: 1px solid rgb(10, 7, 7);
     padding: 8px;
     width: 1%;
   }
+  #T_From_M td, #T_From_M th {
+    position: relative;
+    text-align:center;
+    color:rgb(12, 3, 3);
+    padding: 8px;
+    width: 1%;
+  }
+
   
 .Pdep .contenu2{
     display:none;
