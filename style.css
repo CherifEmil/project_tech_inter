@@ -14,7 +14,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    
 }
 ul.ba {
     list-style-type: none;
@@ -30,9 +31,11 @@ body{
    background-size: 400% 400%;
     overflow:hidden;
     animation: gradient 5s ease infinite;
+    overflow: scroll;
 
 }
 .sidebar{
+z-index: 1030;
 position:fixed;
 top: 0;
 left: 0;
@@ -248,6 +251,7 @@ border-radius: 20px;
     height:100%;
     width: calc(100% - 500px);
     left: calc(100px + 10%);
+    
 }
 .Pdep .T_ecrire{
     position: relative;
@@ -276,8 +280,17 @@ border-radius: 20px;
 #T_From_M{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: separate;
-    border-radius: 50%;
     width: 100%;
+    
+    
+    
+}
+#T_From_M thead th {
+    background-color: rgba(157, 158, 158, 0.973);
+    text-shadow: 10px 10px 1px rgb(8, 195, 228), 0 0 25px rgb(1, 0, 12), 0 0 5px rgb(15, 173, 247);
+    transition:all 2s ease;
+    border-radius: 4%;
+    box-shadow: 0 6px  10px rgba(5, 61, 75, 0.7);
     
 }
 #T_From_M tbody tr:hover {
@@ -303,8 +316,43 @@ border-radius: 20px;
   #time{
       font-size: 20px;
   }
+  .Pdep .content_tabel_mail{
+    display:none;
+    position:relative;
+    top:15%;
+    width:80%;
+    left: 10%;
+    height: 100px;
 
-  
+}
+#received_M{
+position:relative;
+left: -45%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(228, 213, 8), 0 0 25px rgb(228, 225, 219), 0 0 5px rgb(243, 243, 243);
+    
+}
+#received_M:hover{
+    position:relative;
+    left: -45%;
+    font-size: 400%;
+    text-shadow: 1px 1px 2px rgb(228, 213, 8), 0 0 25px rgb(212, 148, 9), 0 0 5px rgb(243, 243, 243);
+        
+    }
+#send_M{
+position:relative;
+right: -45%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(226, 224, 233), 0 0 5px rgb(15, 173, 247); 
+}
+#send_M:hover{
+    position:relative;
+    right: -45%;
+    font-size: 400%;
+    text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(60, 13, 233), 0 0 5px rgb(15, 173, 247); 
+    }
+     
+ 
 .Pdep .contenu2{
     display:none;
     position: relative;
@@ -324,6 +372,8 @@ border-radius: 20px;
 }
 .Pdep .contenu2 .address_mail {
   top:20%;
+  height:8%;
+  text-align: center;
   width:80%;
   font-size: 20px;
   border-radius:12px; 
@@ -336,7 +386,7 @@ border-radius: 20px;
     height:50%;
     border-radius: 12px;  
     border: 4px ridge rgba(17, 16, 29, 1);
-    font-size: 30px;
+    font-size: 20px;
 } 
 
 .Pdep .contenu2 .send_mail{
@@ -377,30 +427,6 @@ border-radius: 20px;
     animation: gradient 5s ease infinite;
     transition:all 1s ease;
 } 
-.Pdep .add_rem_contact{
-    display:none;
-    position: absolute;
-    bottom:10%;
-    width:80%;
-    left: 10%;
-    height: 100px;
-
-}
-#NC_add{
-position:absolute;
-left: 20%;
-font-size: 400%;
-text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(30, 243, 40), 0 0 5px rgb(15, 173, 247);
-    
-}
-#C_rem{
-position:absolute;
-right: 20%;
-font-size: 400%;
-text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(207, 38, 16), 0 0 5px rgb(15, 173, 247);
-    
-
-}
 #T_Contact{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: separate;
@@ -414,3 +440,27 @@ text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(207, 38, 16), 0 0 5px rg
     padding: 8px;
     width: 1%;
   }
+.Pdep .add_rem_contact{
+    display:none;
+    position:relative;
+    top:15%;
+    width:80%;
+    left: 10%;
+    height: 100px;
+
+}
+#NC_add{
+position:relative;
+left: -45%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(30, 243, 40), 0 0 5px rgb(15, 173, 247);
+    
+}
+#C_rem{
+position:relative;
+right: -45%;
+font-size: 400%;
+text-shadow: 1px 1px 2px rgb(8, 195, 228), 0 0 25px rgb(207, 38, 16), 0 0 5px rgb(15, 173, 247);
+    
+
+}

@@ -91,8 +91,8 @@
         <table id="T_From_M">
             <thead>
             <tr>
-                <th>De </th>
-                <th>Contenue</th>
+                <th id="prec_to">De </th>
+                <th>Contenu</th>
                 <th><i class='bx bxs-time bx-spin bx-rotate-270' id="time"></i></th>
 
             </tr>
@@ -107,12 +107,16 @@
         </tbody>
         </table>    
     </div>
+    <div class="content_tabel_mail">
+        <i class='bx bxs-receipt' id="received_M" ></i>
+        <i class='bx bxs-send' id="send_M" ></i>
+    </div>
     <div class="contenu2">
         
         <h2 class="title_M">Destinataire </h2>
       
         <textarea type="text" name="email" id="address_mail" class="address_mail"></textarea>
-        <h2 class="title_M">Contenue </h2>
+        <h2 class="title_M">Contenu</h2>
         <textarea type="text" name="content_mail" id="content_mail" class="content_mail">
         </textarea>
         <button type="submit" class="send_mail" onclick="alert('Hello world!')">Envoyer le message</button>
